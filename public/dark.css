@@ -1,0 +1,24 @@
+:root {
+  --bg: #202020 radial-gradient(#1a1f35 33%, #202020 100%) no-repeat fixed;
+  --bg_clr: #202020;
+  --txt_clr: 255, 255, 255;
+  --clr_prm: #4cc2ff;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.033);
+}
+.search:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.05);
+}
+.tile:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar:hover {
+  background: #2b2b2b;
+}

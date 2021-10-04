@@ -11,8 +11,20 @@ ReactDOM.render(
 
 {
   const hamburger = document.querySelector(".hamburger");
-  const header = document.querySelector("header");
+  const nav = document.querySelector("nav");
+  var navLink = nav.getElementsByClassName("navLink");
+
   hamburger.addEventListener("click", () => {
-    header.classList.toggle("open");
+    nav.classList.toggle("open");
   });
+
+  for (var i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      this.className += " active";
+    });
+  }
 }

@@ -5,9 +5,11 @@ export default function Main(props) {
   return (
     <main>
       <h1>{props.pageName}</h1>
-      {props.info.map((i) => {
-        return <Tile info={i} />;
-      })}
+      <div className="tileCont">
+        {props.info.map((i) => {
+          return <Tile info={i} />;
+        })}
+      </div>
     </main>
   );
 }

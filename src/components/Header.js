@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <nav>
         <div className="nav_top">
-          <Link to="accounts" className="account">
+          <Link to="accounts" className="navLink account">
             <img src="img/defAccount.webp" width="60" height="60" alt="" />
             <div>
               <p>
@@ -19,40 +19,48 @@ export default function Header() {
           </Link>
           <input type="text" className="search" placeholder="Find a setting " name="search" />
         </div>
-        <Link to="/">
-          <img src="" alt="" height="16" width="16" /> System
-        </Link>
-        <Link to="bluetooth">
-          <img src="" alt="" height="16" width="16" /> Bluetooth &amp; devices
-        </Link>
-        <Link to="network">
-          <img src="" alt="" height="16" width="16" /> Network &amp; internet
-        </Link>
-        <Link to="personalisation">
-          <img src="" alt="" height="16" width="16" /> Personalisation
-        </Link>
-        <Link to="apps">
-          <img src="" alt="" height="16" width="16" /> Apps
-        </Link>
-        <Link to="accounts">
-          <img src="" alt="" height="16" width="16" /> Accounts
-        </Link>
-        <Link to="time">
-          <img src="" alt="" height="16" width="16" /> Time &amp; language
-        </Link>
-        <Link to="gaming">
-          <img src="" alt="" height="16" width="16" /> Gaming
-        </Link>
-        <Link to="accessibility">
-          <img src="" alt="" height="16" width="16" /> Accessibility
-        </Link>
-        <Link to="privacy">
-          <img src="" alt="" height="16" width="16" /> Privacy &amp; security
-        </Link>
-        <Link to="update">
-          <img src="" alt="" height="16" width="16" /> Windows Update
-        </Link>
+        <div className="nav_bottom">
+          <Link className="navLink active" to="system">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> System
+          </Link>
+          <Link className="navLink" to="bluetooth">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Bluetooth &amp; devices
+          </Link>
+          <Link className="navLink" to="network">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Network &amp; internet
+          </Link>
+          <Link className="navLink" to="personalisation">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Personalisation
+          </Link>
+          <Link className="navLink" to="apps">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Apps
+          </Link>
+          <Link className="navLink" to="accounts">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accounts
+          </Link>
+          <Link className="navLink" to="time">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Time &amp; language
+          </Link>
+          <Link className="navLink" to="gaming">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Gaming
+          </Link>
+          <Link className="navLink" to="accessibility">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accessibility
+          </Link>
+          <Link className="navLink" to="privacy">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Privacy &amp; security
+          </Link>
+          <Link className="navLink" to="update">
+            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Windows Update
+          </Link>
+        </div>
       </nav>
+      <div className="hamburger">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+          <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+        </svg>
+      </div>
+      <dark-mode-toggle permanent></dark-mode-toggle>
     </header>
   );
 }

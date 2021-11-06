@@ -21,37 +21,37 @@ export default function Header() {
         </div>
         <div className="nav_bottom">
           <Link className="navLink active" to="system">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> System
+            <img src="img/nav/system.webp" alt="" height="16" width="16" /> System
           </Link>
           <Link className="navLink" to="bluetooth">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Bluetooth &amp; devices
+            <img src="img/nav/bluetooth.webp" alt="" height="16" width="16" /> Bluetooth &amp; devices
           </Link>
           <Link className="navLink" to="network">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Network &amp; internet
+            <img src="img/nav/wifi.webp" alt="" height="16" width="16" /> Network &amp; internet
           </Link>
           <Link className="navLink" to="personalisation">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Personalisation
+            <img src="img/nav/theme.webp" alt="" height="16" width="16" /> Personalisation
           </Link>
           <Link className="navLink" to="apps">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Apps
+            <img src="img/nav/apps.webp" alt="" height="16" width="16" /> Apps
           </Link>
           <Link className="navLink" to="accounts">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accounts
+            <img src="img/nav/user.webp" alt="" height="16" width="16" /> Accounts
           </Link>
           <Link className="navLink" to="time">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Time &amp; language
+            <img src="img/nav/time.webp" alt="" height="16" width="16" /> Time &amp; language
           </Link>
           <Link className="navLink" to="gaming">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Gaming
+            <img src="img/nav/gaming.webp" alt="" height="16" width="16" /> Gaming
           </Link>
           <Link className="navLink" to="accessibility">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accessibility
+            <img src="img/nav/acessbility.webp" alt="" height="16" width="16" /> Accessibility
           </Link>
           <Link className="navLink" to="privacy">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Privacy &amp; security
+            <img src="img/nav/defender.webp" alt="" height="16" width="16" /> Privacy &amp; security
           </Link>
           <Link className="navLink" to="update">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Windows Update
+            <img src="img/nav/update.webp" alt="" height="16" width="16" /> Windows Update
           </Link>
         </div>
       </nav>

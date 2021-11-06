@@ -21,22 +21,22 @@ export default function Header() {
         </div>
         <div className="nav_bottom">
           <Link className="navLink active" to="system">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> System
+            <img src="img/system.png" alt="" height="16" width="16" /> System
           </Link>
           <Link className="navLink" to="bluetooth">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Bluetooth &amp; devices
+            <img src="img/bluetooth.png" alt="" height="16" width="16" /> Bluetooth &amp; devices
           </Link>
           <Link className="navLink" to="network">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Network &amp; internet
+            <img src="img/wifi.png" alt="" height="16" width="16" /> Network &amp; internet
           </Link>
           <Link className="navLink" to="personalisation">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Personalisation
+            <img src="img/theme.png" alt="" height="16" width="16" /> Personalisation
           </Link>
           <Link className="navLink" to="apps">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Apps
+            <img src="img/apps.png" alt="" height="16" width="16" /> Apps
           </Link>
           <Link className="navLink" to="accounts">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accounts
+            <img src="img/user.png" alt="" height="16" width="16" /> Accounts
           </Link>
           <Link className="navLink" to="time">
             <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Time &amp; language
@@ -45,13 +45,13 @@ export default function Header() {
             <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Gaming
           </Link>
           <Link className="navLink" to="accessibility">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Accessibility
+            <img src="img/acessbility.png" alt="" height="16" width="16" /> Accessibility
           </Link>
           <Link className="navLink" to="privacy">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Privacy &amp; security
+            <img src="img/defender.png" alt="" height="16" width="16" /> Privacy &amp; security
           </Link>
           <Link className="navLink" to="update">
-            <img src="img/16x16-00000000.png" alt="" height="16" width="16" /> Windows Update
+            <img src="img/update.png" alt="" height="16" width="16" /> Windows Update
           </Link>
         </div>
       </nav>

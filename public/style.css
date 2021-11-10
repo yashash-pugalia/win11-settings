@@ -100,6 +100,7 @@ nav a img {
   border-radius: 0.33rem;
   padding: 0.5rem;
   margin: 1rem;
+  color:var(--txt_clr)
 }
 .search:hover {
   background: rgba(0, 0, 0, 0.033);

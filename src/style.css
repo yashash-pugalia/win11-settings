@@ -1,14 +1,16 @@
+@font-face {
+  font-family: SettingsIcons;
+  font-display: swap;
+  src: url("./SettingsIcons.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: default;
-  -webkit-user-select: none;
-  user-select: none;
 }
 :root {
-  --bg: #f3f3f3 radial-gradient(#eff4f9 66%, #f3f3f3 100%) no-repeat fixed;
-  --bg_clr: #f3f3f3;
+  --bg: #f3f3f3;
   --txt_clr: 0, 0, 0;
   --clr_prm: #0067c0;
 }
@@ -18,12 +20,6 @@ body {
   color: rgb(var(--txt_clr));
   display: flex;
   margin-left: 300px;
-}
-
-@font-face {
-  font-family: SettingsIcons;
-  font-display: swap;
-  src: url("fonts/SettingsIcons.woff2") format("woff2");
 }
 
 nav {
@@ -229,32 +225,38 @@ main h2 {
     transform: translateX(-110%);
     z-index: 999;
     transition: all 0.2s cubic-bezier(0, 0, 0, 1);
-    background: var(--bg_clr);
+    background: var(--bg);
   }
   nav.open {
     transform: translateX(0);
   }
   .nav_top {
-    background: var(--bg_clr);
+    background: var(--bg);
   }
 }
 
-dark-mode-toggle {
-  position: fixed;
-  top: 0.5rem;
-  right: 4rem;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  --dark-mode-toggle-icon-size: 1.5rem;
-  --dark-mode-toggle-icon-filter: invert(100%);
-  --dark-mode-toggle-dark-icon: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M18.1 5.1c0 .3-.1.6-.3.9l-1.4 1.4-.9-.8 2.2-2.2c.3.1.4.4.4.7zm-.5 5.3h3.2c0 .3-.1.6-.4.9s-.5.4-.8.4h-2v-1.3zm-6.2-5V2.2c.3 0 .6.1.9.4s.4.5.4.8v2h-1.3zm6.4 11.7c-.3 0-.6-.1-.8-.3l-1.4-1.4.8-.8 2.2 2.2c-.2.2-.5.3-.8.3zM6.2 4.9c.3 0 .6.1.8.3l1.4 1.4-.8.9-2.2-2.3c.2-.2.5-.3.8-.3zm5.2 11.7h1.2v3.2c-.3 0-.6-.1-.9-.4s-.4-.5-.4-.8l.1-2zm-7-6.2h2v1.2H3.2c0-.3.1-.6.4-.9s.5-.3.8-.3zM6.2 16l1.4-1.4.8.8-2.2 2.2c-.2-.2-.3-.5-.3-.8s.1-.6.3-.8z'/%3E%3Ccircle cx='12' cy='11' r='4'/%3E%3C/svg%3E");
-  --dark-mode-toggle-light-icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 20 20'%3E%3Ctitle%3E moon %3C/title%3E%3Cpath d='M17.39 15.14A7.33 7.33 0 0 1 11.75 1.6c.23-.11.56-.23.79-.34a8.19 8.19 0 0 0-5.41.45 9 9 0 1 0 7 16.58 8.42 8.42 0 0 0 4.29-3.84 5.3 5.3 0 0 1-1.03.69z'/%3E%3C/svg%3E%0A");
-}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202020;
+    --txt_clr: 255, 255, 255;
+    --clr_prm: #4cc2ff;
+  }
 
-dark-mode-toggle:hover {
-  background: rgb(var(--txt_clr), 0.1);
+  .search {
+    background: rgba(255, 255, 255, 0.033);
+  }
+  .search:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .tile {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .tile:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar:hover {
+    background: #2b2b2b;
+  }
 }

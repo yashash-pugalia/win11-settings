@@ -20,6 +20,7 @@ body {
   color: rgb(var(--txt_clr));
   display: flex;
   margin-left: 300px;
+  user-select:none;
 }
 
 nav {
@@ -160,6 +161,7 @@ main h2 {
   margin: 5px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
+  cursor:deafult;
 }
 .tile:hover {
   background: rgba(255, 255, 255, 0.33);

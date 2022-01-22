@@ -1,5 +1,4 @@
 {
-  "navList": ["System", "Bluetooth & devices", "Network & internet", "Personalisation", "Apps", "Accounts", "Time & language", "Gaming", "Accessibility", "Privacy & security", "Windows Update"],
   "System": [
     {
       "type": "tile",
@@ -115,7 +114,7 @@
       "type": "tile",
       "name": "Devices",
       "desc": "Mouse, keyboard, pen, audio, displays and docks, other devices",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -315,6 +314,12 @@
     }
   ],
   "Accounts": [
+    {
+      "type": "tile",
+      "name": "Your Microsoft account",
+      "desc": "Subscriptions, rewards and more",
+      "icon": ""
+    },
     {
       "type": "tile",
       "name": "Your info",

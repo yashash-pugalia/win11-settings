@@ -13,3 +13,14 @@ Fun Fact : It has a Lighthouse score of 100
 - [x] Dark mode
 - [x] responsiveness
 - [ ] icons on every page (I need help with this)
+
+## Contributors
+<a href="https://github.com/yashash1511/windows11-settings/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yashash1511/windows11-settings" />
+</a>
+
+- Thanks to [@blueedgetechno](https://github.com/blueedgetechno/win11React) & [CWH](https://youtu.be/OtOmxa9UMe8) for the inspiration
+- Thanks to [@cupofcoffebruh](https://github.com/cupofcoffebruh) for the nav icons
+- Special thanks to [@andrewstech](https://github.com/andrewstech) for the amazing github-pages deploy system
+
+:)

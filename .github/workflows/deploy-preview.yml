@@ -1,4 +1,4 @@
-name: Generate Preview2
+name: Generate Preview 2
 
 on:
   pull_request_target:

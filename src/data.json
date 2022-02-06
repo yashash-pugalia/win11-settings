@@ -1,5 +1,22 @@
 {
   "System": [
+      {
+      "type": "heading",
+      "device_img":"https://win11.blueedge.me/img/wallpaper/default/img1.jpg",
+      "device_type":"Laptop",
+      "device_name":"HU843-Uij",
+      "device_rename":"Rename",
+      "microsoft_logo":"img/nav/microsoft.png",
+      "microsoft_365":"Microsoft 365",
+      "microsoft_benefits":"View benefits",
+      "onedrive_logo":"https://pencloud.hu/wp-content/uploads/2021/03/onedrive-logo.png",
+      "onedrive_name":"OneDrive",
+      "manage":"Manage",
+      "update_img":"img/nav/Windows Update.webp",
+      "update_text":"Windows Update",
+      "update_foot":"Last checked:",
+      "heading_type":"heading_inner"
+    },
     {
       "type": "tile",
       "name": "Display",

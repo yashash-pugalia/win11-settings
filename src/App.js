@@ -20,7 +20,6 @@ function App() {
         const marker = document.querySelector(".marker");
         marker.classList.add("active");
 
-  
         setTimeout(() => {
           marker.classList.remove("active");
         }, 150);
@@ -45,7 +44,7 @@ function App() {
           {Object.keys(data).map((e) => {
             return (
               <div key={e} className="navLink" onClick={() => setState(e)}>
-                <img src={`img/nav/${e}.webp`} draggable="false" alt="" height={16} width={16} />
+                <img src={`img/nav/${e}.webp`} alt="" height={16} width={16} />
                 {e}
               </div>
             );
@@ -64,7 +63,6 @@ function App() {
               <div className="tilesCont">
                 {data[e].map((e) => {
                   return (
-                  
                     <div key={e.name} className={e.type}>
                       <span>{e.icon}</span>
                      

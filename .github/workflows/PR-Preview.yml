@@ -29,7 +29,7 @@ jobs:
       - name: Build
         run: |
           npm ci
-          PUBLIC_URL=https://pr-preview-bot.github.io/${{ github.event.pull_request.number }} npm run build
+          CI=false PUBLIC_URL=https://pr-preview-bot.github.io/${{ github.event.pull_request.number }} npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

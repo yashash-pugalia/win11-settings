@@ -1,27 +1,29 @@
-name: Github Pages Deploy
+name: Build & Deploy
 
 on:
   push:
-    branches:
-      - "main"
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  Build-Deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - name: Checkout
-        uses: actions/checkout/@v1
+      - uses: actions/checkout@v3
 
-      - name: Install and build
-        run: npm install && CI=false npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - uses: actions/setup-node@v3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          node-version: 16
+          cache: npm
+
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

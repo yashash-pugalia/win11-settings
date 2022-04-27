@@ -1,0 +1,61 @@
+name: PR Preview
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  PR-Preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: comment - Build in Progress
+        uses: peter-evans/create-or-update-comment@v2
+        id: couc
+        with:
+          body: ⌛ Deploy Preview - Build in Progress
+          issue-number: ${{ github.event.pull_request.number }}
+          token: ${{ secrets.PR_PAT }}
+
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Build
+        run: |
+          npm ci
+          CI=false PUBLIC_URL=https://prPreviewBot.github.io/settings-${{ github.event.pull_request.number }} npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PR_PAT }}
+          external_repository: prPreviewBot/prPreviewBot.github.io
+          publish_dir: ./build
+          destination_dir: ./settings-${{ github.event.pull_request.number }}
+
+      - name: comment - Preview ready
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          body: |
+            ✔️ Deploy Preview ready!
+            😎 Browse the preview: https://prPreviewBot.github.io/settings-${{ github.event.pull_request.number }}/
+          comment-id: ${{ steps.couc.outputs.comment-id }}
+          edit-mode: replace
+          token: ${{ secrets.PR_PAT }}
+
+      - name: comment if failed
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          body: |
+            ❌ Deploy Preview failed
+            🔍 Inspect the deploy log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          comment-id: ${{ steps.couc.outputs.comment-id }}
+          edit-mode: replace
+          token: ${{ secrets.PR_PAT }}

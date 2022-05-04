@@ -1,5 +1,10 @@
 # Windows 11 Settings in ReactJS
 
+[![Follow me](https://img.shields.io/github/followers/yashash1511?label=follow%20me&style=social)](https://github.com/yashash1511)
+[![Build & Deploy](https://github.com/yashash1511/windows11-settings/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/yashash1511/windows11-settings/actions/workflows/Build-Deploy.yml)
+[![Close PR Preview](https://github.com/yashash1511/windows11-settings/actions/workflows/PR-Closed.yml/badge.svg)](https://github.com/yashash1511/windows11-settings/actions/workflows/PR-Closed.yml)
+[![pages-build-deployment](https://github.com/yashash1511/windows11-settings/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yashash1511/windows11-settings/actions/workflows/pages/pages-build-deployment)
+
 ## Note : this is now a part of the amazing win11react project
 - [github](https://github.com/blueedgetechno/win11React)
 - [Live Experience (win11.blueedge.me)](https://win11.blueedge.me/)
@@ -19,16 +24,8 @@ Fun Fact : It has a Lighthouse score of 100
 - [x] responsiveness
 - [ ] icons on every page (I need help with this)
 
-## Contributors
-
-<a href="https://github.com/yashash1511/windows11-settings/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yashash1511/windows11-settings" />
-</a>
-
 ## Special Thanks
 
 - [@blueedgetechno](https://github.com/blueedgetechno/win11React) & [CodeWithHarry](https://youtu.be/OtOmxa9UMe8) for the inspiration.
 - [@cupofcoffebruh](https://github.com/cupofcoffebruh) for the nav icons & more.
 - [@andrewstech](https://github.com/andrewstech) for the amazing github-pages deploy system.
-
-:)

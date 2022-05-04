@@ -13,13 +13,12 @@ jobs:
         uses: peter-evans/create-or-update-comment@v2
         id: couc
         with:
-          body: ⌛ Deploy Preview - Build in Progress
+          body: ⌛ Deploy Preview processing.
           issue-number: ${{ github.event.pull_request.number }}
-          token: ${{ secrets.PR_PAT }}
 
       - uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
       - uses: actions/setup-node@v3
         with:
@@ -29,25 +28,23 @@ jobs:
       - name: Build
         run: |
           npm ci
-          CI=false PUBLIC_URL=https://prPreviewBot.github.io/settings-${{ github.event.pull_request.number }} npm run build
+          CI=false PUBLIC_URL=https://yashash1511.github.io/windows11-settings/pr/${{ github.event.pull_request.number }} npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PR_PAT }}
-          external_repository: prPreviewBot/prPreviewBot.github.io
+          destination_dir: ./pr/${{ github.event.pull_request.number }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          destination_dir: ./settings-${{ github.event.pull_request.number }}
 
       - name: comment - Preview ready
         uses: peter-evans/create-or-update-comment@v2
         with:
           body: |
             ✔️ Deploy Preview ready!
-            😎 Browse the preview: https://prPreviewBot.github.io/settings-${{ github.event.pull_request.number }}/
+            😎 Browse the preview: https://yashash1511.github.io/windows11-settings/pr/${{ github.event.pull_request.number }}/
           comment-id: ${{ steps.couc.outputs.comment-id }}
           edit-mode: replace
-          token: ${{ secrets.PR_PAT }}
 
       - name: comment if failed
         if: ${{ failure() }}
@@ -58,4 +55,3 @@ jobs:
             🔍 Inspect the deploy log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           comment-id: ${{ steps.couc.outputs.comment-id }}
           edit-mode: replace
-          token: ${{ secrets.PR_PAT }}

@@ -1,6 +1,8 @@
 {
   "System": [
-    { "type": "sysTop" },
+    {
+      "type": "sysTop"
+    },
     {
       "type": "tile",
       "name": "Display",
@@ -115,7 +117,7 @@
       "type": "tile",
       "name": "Devices",
       "desc": "Mouse, keyboard, pen, audio, displays and docks, other devices",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -167,7 +169,9 @@
     }
   ],
   "Network & internet": [
-    { "type": "netTop" },
+    {
+      "type": "netTop"
+    },
     {
       "type": "tile",
       "name": "WiFi",
@@ -360,13 +364,13 @@
       "type": "tile",
       "name": "Date & time",
       "desc": "Time zones, automatic clock settings, calendar display",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
       "name": "Language & region",
       "desc": "Windows and some apps format dates and times based on your region",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -378,7 +382,7 @@
       "type": "tile",
       "name": "Speech",
       "desc": "Speech language, speech recognition microphone setup, voices",
-      "icon": ""
+      "icon": ""
     }
   ],
   "Gaming": [
@@ -410,7 +414,7 @@
       "type": "tile",
       "name": "Text size",
       "desc": "Text size that appears throughout Windows and your apps",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -422,7 +426,7 @@
       "type": "tile",
       "name": "Mouse pointer and touch",
       "desc": "Mouse pointer colour, size",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -462,7 +466,7 @@
       "type": "tile",
       "name": "Audio",
       "desc": "Mono audio, audio notifications",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -478,7 +482,7 @@
       "type": "tile",
       "name": "Speech",
       "desc": "Windows Speech Recognition, voice typing",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -490,7 +494,7 @@
       "type": "tile",
       "name": "Mouse",
       "desc": "Mouse keys, speed, acceleration",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -514,13 +518,13 @@
       "type": "tile",
       "name": "Find my device",
       "desc": "Track your device if you think you've lost it",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
       "name": "For developers",
       "desc": "These settings are intended for development use only",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "subHeading",
@@ -530,7 +534,7 @@
       "type": "tile",
       "name": "General",
       "desc": "Advertising ID, local content, app launches, settings suggestions, productivity tools",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
@@ -707,19 +711,19 @@
     {
       "type": "tile",
       "name": "Update history",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
       "name": "Advanced options",
       "desc": "Delivery optimisations, optional updates, active hours, other update settings",
-      "icon": ""
+      "icon": ""
     },
     {
       "type": "tile",
       "name": "Windows Insider Programme",
       "desc": "Get preview builds of Windows to share feedback to new features and updates",
-      "icon": ""
+      "icon": ""
     }
   ]
 }

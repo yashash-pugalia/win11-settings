@@ -1,7 +1,7 @@
 # Windows 11 Settings in ReactJS
 
-[![Follow me](https://img.shields.io/github/followers/yashash1511?label=follow%20me&style=social)](https://github.com/yashash1511)
-[![Build & Deploy](https://github.com/yashash1511/win11settings-react/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/yashash1511/win11settings-react/actions/workflows/Build-Deploy.yml)
+[![Follow me](https://img.shields.io/github/followers/yashash-pugalia?label=follow%20me&style=social)](https://github.com/yashash-pugalia)
+[![Build & Deploy](https://github.com/yashash-pugalia/win11-settings/actions/workflows/Build-Deploy.yml/badge.svg)](https://github.com/yashash-pugalia/win11settings-react/actions/workflows/Build-Deploy.yml)
 
 ## Note : this is now a part of the amazing win11react project
 
